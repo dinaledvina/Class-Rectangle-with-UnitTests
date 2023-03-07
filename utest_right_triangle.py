@@ -17,7 +17,7 @@ class TestRightTriangle(unittest.TestCase):
         self.assertEqual(self.rt.GetArea(), 6.0)
     
     def test_get_perimeter(self):
-        self.assertEqual(self.rt.GetPerimeter(), 12.0 )
+        self.assertEqual(self.rt.GetPerimeter(), 12.0)
 
 
 if __name__ == '__main__':
