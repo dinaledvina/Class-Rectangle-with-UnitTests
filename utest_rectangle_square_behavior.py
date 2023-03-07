@@ -24,8 +24,8 @@
 
 
 import unittest
-from rect_no_input_06 import Rectangle
-from sq_subclass_of_rect import Square
+from rectangle import Rectangle
+from square import Square
 
 
 class TestRectangleAndSquare(unittest.TestCase):
