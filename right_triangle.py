@@ -1,9 +1,6 @@
 from rect_no_input_06 import Rectangle
 
 
-
-
-
 class RightTriangle(Rectangle):
     def __init__(self, base, height):
         super().__init__(base, height)
