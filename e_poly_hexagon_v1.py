@@ -12,9 +12,6 @@ class Hexagon(EquilateralPolygon):
 		return 3 * self.side_length ** 2 * math.sqrt(3) / 2
 
 
-	def GetPerimeter(self):
-		return self.num_sides * self.side_length
-
 
 
 hexagon = Hexagon(6)
