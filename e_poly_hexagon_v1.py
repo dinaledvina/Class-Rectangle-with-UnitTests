@@ -3,8 +3,8 @@ import math
 
 
 class Hexagon(EquilateralPolygon):
-	def __init__(self):
-		super().__init__(6)
+	def __init__(self, num_sides):
+		super().__init__(num_sides)
 
 
 
@@ -13,11 +13,11 @@ class Hexagon(EquilateralPolygon):
 
 
 	def GetPerimeter(self):
-		return 6 * self.side_length
+		return self.num_sides * self.side_length
 
 
 
-hexagon = Hexagon()
+hexagon = Hexagon(6)
 
 print("Hexagon area:", hexagon.GetArea())
 print("Hexagon perimeter:", hexagon.GetPerimeter())
