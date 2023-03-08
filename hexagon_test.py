@@ -6,10 +6,7 @@ from hexagon import Hexagon
 
 class TestHexagon(unittest.TestCase):
 
-    def length_and_width(self):
-        hexagon = Hexagon(5)
-        self.assertEqual(hexagon.GetLength(), 5)
-        self.assertEqual(hexagon.GetWidth(), 5)
+
 
     def test_area(self):
         hexagon = Hexagon(5)
