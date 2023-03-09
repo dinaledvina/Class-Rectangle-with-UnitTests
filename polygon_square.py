@@ -12,5 +12,4 @@ class Square(EquilateralPolygon):
 
 
 square = Square(4)
-print("Square area:", square.GetArea())
-print("Square perimeter:", square.GetPerimeter())
+
