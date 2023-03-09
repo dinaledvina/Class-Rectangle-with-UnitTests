@@ -9,7 +9,7 @@ class TestHexagon(unittest.TestCase):
 
 
     def test_area(self):
-      hexagon = Hexagon(6)
+      hexagon = Hexagon(5)
       self.assertAlmostEqual(GetArea(), 64.95, places=2)
 
     
