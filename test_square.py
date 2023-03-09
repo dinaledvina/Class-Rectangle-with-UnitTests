@@ -1,5 +1,4 @@
 import unittest
-from polygon import EquilateralPolygon
 from polygon_square import Square
 
 class TestSquare(unittest.TestCase):
