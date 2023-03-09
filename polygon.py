@@ -21,5 +21,4 @@ EquilateralPolygon.side_length = 5
 triangle = EquilateralPolygon(3)
 
 
-# print("Triangle area:", triangle.GetArea())
-# print("Triangle perimeter:", triangle.GetPerimeter())
+
