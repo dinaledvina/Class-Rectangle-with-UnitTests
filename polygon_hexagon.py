@@ -14,7 +14,6 @@ class Hexagon(EquilateralPolygon):
 
 
 
-hexagon = Hexagon(6)
 
 
 
