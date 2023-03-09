@@ -1,7 +1,7 @@
 import unittest
-from e_polygon import EquilateralPolygon
+from polygon import EquilateralPolygon
 import math
-from epolygon_square import Square
+from polygon_square import Square
 
 class TestSquare(unittest.TestCase):
 
