@@ -1,6 +1,5 @@
 import unittest
 from polygon import EquilateralPolygon
-import math
 from polygon_square import Square
 
 class TestSquare(unittest.TestCase):
