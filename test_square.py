@@ -5,10 +5,10 @@ class TestSquare(unittest.TestCase):
 
 
     def test_area(self):
-    	self.assertEqual(square.GetArea(), 25)
+    	self.assertEqual(GetArea(), 25)
 
     def test_perimeter(self):
-        self.assertEqual(square.GetPerimeter(), 20)
+        self.assertEqual(GetPerimeter(), 20)
 
 
 
