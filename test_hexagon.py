@@ -1,5 +1,4 @@
 import unittest
-from polygon import EquilateralPolygon
 from polygon_hexagon import Hexagon
 
 
