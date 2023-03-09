@@ -11,5 +11,5 @@ class Square(EquilateralPolygon):
 
 
 
-square = Square(4)
+
 
