@@ -16,8 +16,7 @@ class Hexagon(EquilateralPolygon):
 
 hexagon = Hexagon(6)
 
-print("Hexagon area:", hexagon.GetArea())
-print("Hexagon perimeter:", hexagon.GetPerimeter())
+
 
 
 
