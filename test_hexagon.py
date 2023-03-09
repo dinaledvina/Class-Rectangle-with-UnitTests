@@ -1,7 +1,7 @@
 import unittest
-from e_polygon import EquilateralPolygon
+from polygon import EquilateralPolygon
 import math
-from epolygon_hexagon import Hexagon
+from polygon_hexagon import Hexagon
 
 
 
