@@ -1,12 +1,10 @@
-import math
-
-
 
 class EquilateralPolygon:
-    side_length = 0
+   
 
-    def __init__(self, num_sides):
+    def __init__(self, num_sides, side_length):
         self.num_sides = num_sides
+        self.side_length = side_length
 
     def GetPerimeter(self):
         return self.num_sides * self.side_length
@@ -16,7 +14,7 @@ class EquilateralPolygon:
         return (self.GetPerimeter() * apothem) / 2
 
 
-EquilateralPolygon.side_length = 5
+polygon = EquilateralPolygon(3, 5)
 
 
 
