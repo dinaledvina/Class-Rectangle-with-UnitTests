@@ -18,7 +18,7 @@ class EquilateralPolygon:
 
 EquilateralPolygon.side_length = 5
 
-triangle = EquilateralPolygon(3)
+
 
 
 
