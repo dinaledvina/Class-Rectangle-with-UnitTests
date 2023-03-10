@@ -14,7 +14,7 @@ class EquilateralPolygon:
         return (self.GetPerimeter() * apothem) / 2
 
 
-polygon = EquilateralPolygon(3, 5)
+
 
 
 
