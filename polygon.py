@@ -1,3 +1,5 @@
+import math
+
 class EquilateralPolygon:
     def __init__(self, num_sides, side_length):
         self.num_sides = num_sides
