@@ -8,8 +8,6 @@ class Hexagon(EquilateralPolygon):
 
 
 
-	def GetArea(self):
-		return 3 * self.side_length ** 2 * math.sqrt(3) / 2
 
 
 
