@@ -1,5 +1,5 @@
 import unittest
-from epolygon_hexagon import Hexagon
+from hexagon import Hexagon
 
 
 class TestHexagon(unittest.TestCase):
