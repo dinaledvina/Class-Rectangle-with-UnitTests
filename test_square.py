@@ -1,5 +1,5 @@
 import unittest
-from epolygon_square import Square
+from square import Square
 
 class TestSquare(unittest.TestCase):
 
