@@ -1,5 +1,4 @@
-from e_polygon import EquilateralPolygon
-import math
+from polygon import EquilateralPolygon
 
 class Square(EquilateralPolygon):
     def __init__(self, side_length):
