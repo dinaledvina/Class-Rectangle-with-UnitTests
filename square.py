@@ -2,16 +2,14 @@ from e_polygon import EquilateralPolygon
 import math
 
 class Square(EquilateralPolygon):
-    def __init__(self, num_sides, side_length):
-        super().__init__(num_sides, side_length)
+    def __init__(self, side_length):
+        super().__init__(4, side_length)
 
     def GetArea(self):
-        square = Square(4, 5)
         return self.side_length ** 2
 
     def GetPerimeter(self):
-        square = Square(4, 5)
-        return self.num_sides * self.side_length
+        return super().GetPerimeter()
 
 
 
