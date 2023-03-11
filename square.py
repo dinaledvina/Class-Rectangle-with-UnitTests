@@ -9,7 +9,7 @@ class Square(EquilateralPolygon):
         square = Square(4, 5)
         return self.side_length ** 2
 
-    def perimeter(self):
+    def GetPerimeter(self):
         square = Square(4, 5)
         return self.num_sides * self.side_length
 
