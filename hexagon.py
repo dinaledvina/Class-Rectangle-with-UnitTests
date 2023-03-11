@@ -12,8 +12,7 @@ class Hexagon(EquilateralPolygon):
 		return 3 * self.side_length ** 2 * math.sqrt(3) / 2
 
 
-	def GetPerimeter(self):
-		return super().GetPerimeter()
+
 
 
 
