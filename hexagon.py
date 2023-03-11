@@ -1,4 +1,4 @@
-from e_polygon import EquilateralPolygon
+from polygon import EquilateralPolygon
 
 
 
