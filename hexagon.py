@@ -1,5 +1,5 @@
 from e_polygon import EquilateralPolygon
-import math
+
 
 
 class Hexagon(EquilateralPolygon):
