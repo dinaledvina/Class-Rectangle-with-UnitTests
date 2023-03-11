@@ -8,8 +8,6 @@ class Square(EquilateralPolygon):
     def GetArea(self):
         return self.side_length ** 2
 
-    def GetPerimeter(self):
-        return super().GetPerimeter()
 
 
 
