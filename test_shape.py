@@ -12,7 +12,7 @@ class TestShape(unittest.TestCase):
     def test_set_position(self):
    
         shape.set_position(x_value, y_value)
-        self.assertEqual(shape.set_position(), (x_value, y_value))
+        self.assertEqual(shape.get_position(), (x_value, y_value))
 
     def test_get_position(self):
       
