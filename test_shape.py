@@ -11,4 +11,7 @@ class TestShape(unittest.TestCase):
         shape.set_position(shape.x, shape.y)
        
         self.assertEqual(shape.get_position(), (shape.x, shape.y))
+        
+        
+        
 
