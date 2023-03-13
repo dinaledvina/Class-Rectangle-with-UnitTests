@@ -1,16 +1,17 @@
 import unittest
-
+from shape import Shape
 
 class TestShape(unittest.TestCase):
-
-    def test_shape_position(self):
+    def test_init(self):
+        
         shape = Shape()
-        
-        
-        
-        shape.set_position()
-        
-        self.assertEqual(shape.get_position(), (shape.x, shape.y))
+
+       
+        self.assertEqual(shape.x, 10)
+        self.assertEqual(shape.y, 10)
+
+if __name__ == '__main__':
+    unittest.main()
 
         
         
