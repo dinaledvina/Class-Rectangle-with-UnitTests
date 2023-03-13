@@ -7,5 +7,8 @@ class TestShape(unittest.TestCase):
         shape = Shape()
         shape.x = 0
         shape.y = 0
-        self.assertEqual(shape.x, 0)
-        self.assertEqual(shape.y, 0)
+
+        shape.set_position(shape.x, shape.y)
+       
+        self.assertEqual(shape.get_position(), (shape.x, shape.y))
+
