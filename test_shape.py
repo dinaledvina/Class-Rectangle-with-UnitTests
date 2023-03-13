@@ -14,9 +14,7 @@ class TestShape(unittest.TestCase):
         shape.set_position(x_value, y_value)
         self.assertEqual(shape.get_position(), (x_value, y_value))
 
-    def test_get_position(self):
-      
-        self.assertEqual(shape.get_position(), (x_value, y_value))
+
 
 if __name__ == '__main__':
     unittest.main()
