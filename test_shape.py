@@ -3,16 +3,11 @@ import unittest
 from shape import Shape
 
 class TestShape(unittest.TestCase):
-    def test_init(self):
-       
-        shape = Shape()
-        x_value = 0
-        y_value = 0
-
-    def test_set_position(self):
-   
-        shape.set_position(x_value, y_value)
-        self.assertEqual(shape.get_position(), (x_value, y_value))
+    
+	def test_set_position(self):
+   		shape = Shape()
+   		shape.set_position(x_value = 1, y_value = 1)
+   		self.assertEqual(shape.get_position(), (x_value, y_value))
 
 
 
