@@ -6,7 +6,9 @@ class TestShape(unittest.TestCase):
     
 	def test_set_position(self):
    		shape = Shape()
-   		shape.set_position(x_value = 1, y_value = 1)
+		x_value = 0
+		x_value = 0
+   		shape.set_position(x_value, y_value)
    		self.assertEqual(shape.get_position(), (x_value, y_value))
 
 
