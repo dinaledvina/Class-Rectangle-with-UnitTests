@@ -13,8 +13,4 @@ class Shape:
 
 
 
-my_shape = Shape()
-my_shape.set_position(3, 4)
-position = my_shape.get_position()
-print(position)
- 
+
