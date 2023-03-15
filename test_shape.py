@@ -4,12 +4,12 @@ from shape import Shape
 
 class TestShape(unittest.TestCase):
     
-	def test_set_position(self):
+	def test_get_position(self):
    		shape = Shape()
-		x_value = 0
-		x_value = 0
-   		shape.set_position(x_value, y_value)
-   		self.assertEqual(shape.get_position(), (x_value, y_value))
+		
+   		shape.set_position(10, 20)
+   		self.assertEqual(shape.get_position(), (10, 20))
+   		
 
 
 
