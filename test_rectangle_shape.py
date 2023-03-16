@@ -17,10 +17,13 @@ class TestRectangle(unittest.TestCase):
     
     def test_GetPerimeter(self):
         self.assertEqual(self.rect.GetPerimeter(), 30)
-
-
-    def test_set_get_corners(self):
         
+    def test_set_corners(self):
+        self.rect.set_corners((0,0), (5,10))
+        self.assertEqual(self.rect.get_corners(), ((0,0), (5,10)))
+
+
+    def test_get_corners(self):
         self.assertEqual(self.rect.get_corners(), ((0, 0), (5, 0), (5, 10), (0, 10)))
 
 
