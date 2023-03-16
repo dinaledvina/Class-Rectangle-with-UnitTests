@@ -1,6 +1,6 @@
 
 import unittest
-from rect_no_input_06 import Rectangle
+from rectangle import Rectangle
 
 class TestRectangle(unittest.TestCase):
     def setUp(self):
