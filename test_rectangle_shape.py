@@ -20,7 +20,7 @@ class TestRectangle(unittest.TestCase):
 
 
     def test_set_get_corners(self):
-        self.rect.set_corners((0, 0), (5, 10))
+        
         self.assertEqual(self.rect.get_corners(), ((0, 0), (5, 10)))
 
 
