@@ -24,13 +24,9 @@ class Rectangle(Shape):
     
 
     def set_corners(self, corner1, corner2):
-        self.corners = (corner1, corner2)
+        (x1, y1), (x2, y2) = corner1, corner2
+        print("Corners: {}".format(corner1, corner2))
+        self.length = x2 - x1
+        self.width = y2 - y1
+        self.corners = (corner1, (x2, y1), corner2, (x1, y2))
 
-    def get_corners(self):
-        return self.corners
-    
-   def test_set_get_corners(self):
-        self.rect.set_corners((0,0), (7,12))
-        self.assertEqual(self.rect.get_corners(), ((0,0), (7,0), (7,12), (0,12)))
-        self.assertEqual(self.rect.GetLength(), 7)
-        self.assertEqual(self.rect.GetWidth(), 12)
