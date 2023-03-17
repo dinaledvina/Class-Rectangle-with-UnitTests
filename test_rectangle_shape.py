@@ -21,15 +21,25 @@ class TestRectangle(unittest.TestCase):
         
         
         
+#     def test_set_corners(self):
+#         self.rect.set_corners((0,0), (5,10))
+#         self.assertEqual(self.rect.get_corners(), ((0,0), (5,10)))
+
+
+#     def test_get_corners(self):
+#         #self.rect.set_corners((0, 0), (5, 10))
+#         #self.assertEqual(self.rect.get_corners(), ((0, 0), (5, 10)))
+#         self.assertEqual(self.rect.get_corners(), ((0, 0), (5, 0), (5, 10), (0, 10)))
+
     def test_set_corners(self):
-        self.rect.set_corners((0,0), (5,10))
-        self.assertEqual(self.rect.get_corners(), ((0,0), (5,10)))
+        #self.rect = Rectangle(7, 12)
+        
+        self.rect.set_corners((0,0), (7,12))
+        self.assertEqual(self.rect.get_corners(), ((0,0), (7,0), (7,12), (0,12)))
+        self.assertEqual(self.rect.GetLength(), 7)
+        self.assertEqual(self.rect.GetWidth(), 12)
 
 
-    def test_get_corners(self):
-        #self.rect.set_corners((0, 0), (5, 10))
-        #self.assertEqual(self.rect.get_corners(), ((0, 0), (5, 10)))
-        self.assertEqual(self.rect.get_corners(), ((0, 0), (5, 0), (5, 10), (0, 10)))
 
 
 
