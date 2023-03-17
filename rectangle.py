@@ -29,4 +29,8 @@ class Rectangle(Shape):
         self.length = x2 - x1
         self.width = y2 - y1
         self.corners = (corner1, (x2, y1), corner2, (x1, y2))
+        
+        
+    def get_corners(self):
+        return self.corners 
 
