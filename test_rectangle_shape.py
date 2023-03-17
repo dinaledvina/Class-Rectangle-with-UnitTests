@@ -22,7 +22,6 @@ class TestRectangle(unittest.TestCase):
         
 
     def test_set_corners(self):
-        self.rect = Rectangle(7, 12)
         
         self.rect.set_corners((0,0), (7,12))
         self.assertEqual(self.rect.get_corners(), ((0,0), (7,0), (7,12), (0,12)))
