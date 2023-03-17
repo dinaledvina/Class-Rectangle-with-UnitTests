@@ -19,6 +19,15 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(self.rect.GetPerimeter(), 30)
         
         
+    def test_set_length(self):
+        self.rect.set_length(7)
+        self.assertEqual(self.rect.GetLength(), 7)
+        
+    def test_set_width(self):
+        self.rect.set_width(12)
+        self.assertEqual(self.rect.GetWidth(), 12)
+        
+        
         
 
     def test_set_corners(self):
