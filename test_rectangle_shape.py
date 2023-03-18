@@ -19,13 +19,18 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(self.rect.GetPerimeter(), 30)
         
         
-    def set_length(self, length):
-        self.length = length
-        self.corners = ((0,0), (self.length, 0), (self.length, self.width), (0, self.width))
-    
-    def set_width(self, width):
-        self.width = width
-        self.corners = ((0,0), (self.length, 0), (self.length, self.width), (0, self.width))
+        
+    def test_set_length(self):
+        self.rectangle.set_length(7)
+        self.assertEqual(self.rectangle.length, 7)
+        
+        self.assertEqual(self.rectangle.corners, ((0,0), (7, 0), (7, 10), (0, 10)))
+        
+    def test_set_width(self):
+        self.rectangle.set_width(12)
+        self.assertEqual(self.rectangle.width, 12)
+        
+        self.assertEqual(self.rectangle.corners, ((0,0), (5, 0), (5, 12), (0, 12)))
         
         
         
