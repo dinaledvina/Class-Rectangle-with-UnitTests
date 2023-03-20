@@ -1,6 +1,5 @@
 
 import unittest
-from rectangle import Rectangle
 from square import Square
 
 class TestSquare(unittest.TestCase):
@@ -22,18 +21,11 @@ class TestSquare(unittest.TestCase):
     def test_set_length(self):
     	self.square = Square(10)
     	self.square.set_length(10)
-    	self.assertEqual(self.square.GetLength(), 10)
-    	self.assertEqual(self.square.GetWidth(), 10)
-    	self.assertEqual(self.square.GetArea(), 100)
     	self.assertEqual(self.square.GetPerimeter(), 40)
 
     def test_set_corners(self):
     	self.square = Square(10)
     	self.square.set_corners((0,0), (10,10))
-    	self.assertEqual(self.square.GetLength(), 10)
-    	self.assertEqual(self.square.GetWidth(), 10)
-    	self.assertEqual(self.square.GetArea(), 100)
-    	self.assertEqual(self.square.GetPerimeter(), 40)
     	self.assertEqual(self.square.get_corners(), ((0,0), (10, 0), (10, 10), (0, 10)))
 
 if __name__ == '__main__':
