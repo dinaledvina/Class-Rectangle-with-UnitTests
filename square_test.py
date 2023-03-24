@@ -2,7 +2,7 @@
 import unittest
 from square import Square
 
-class TestSquare(unittest.TestCase):
+class SquareTest(unittest.TestCase):
     def setUp(self):
         self.square = Square(5)
 
