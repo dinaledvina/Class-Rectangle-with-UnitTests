@@ -2,7 +2,7 @@
 import unittest
 from rectangle import Rectangle
 
-class TestRectangle(unittest.TestCase):
+class RectangleTest(unittest.TestCase):
     def setUp(self):
         self.rect = Rectangle(5, 10)
     
