@@ -2,7 +2,7 @@ import unittest
 from hexagon import Hexagon
 
 
-class TestHexagon(unittest.TestCase):
+class HexagonTest(unittest.TestCase):
 
     def test_area(self):
         hexagon = Hexagon(5)
