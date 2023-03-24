@@ -2,7 +2,7 @@
 import unittest
 from shape import Shape
 
-class TestShape(unittest.TestCase):
+class ShapeTest(unittest.TestCase):
     
 	def test_get_position(self):
    		shape = Shape()
