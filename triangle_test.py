@@ -18,7 +18,7 @@ class TriangleTest(unittest.TestCase):
 
 
     def test_set_length(self):
-        t = Triangle(5, 5, 5)
+        t = Triangle(0, 0, 0)
         t.set_length(6, 8, 10)
         self.assertEqual(t.a, 6)
         self.assertEqual(t.b, 8)
