@@ -9,11 +9,13 @@ class TriangleTest(unittest.TestCase):
         t = Triangle(3, 4, 5)
         self.assertEqual(t.perimeter(), 12)
 
-    def test_set_corners(self):
-        t = Triangle(0, 0, 0)
+   def test_set_corners(self):
+        t = Triangle(4, 3, 5)
         t.set_corners((0,0), (4,0), (0, 3))
-      
         self.assertEqual(t.get_corners(), ((0,0), (4,0), (0, 3)))
+        self.assertEqual(t.a, 4)
+        self.assertEqual(t.b, 3)
+        self.assertEqual(t.c, 5)
 
 
 
