@@ -20,8 +20,7 @@ class TestRightTriangle(unittest.TestCase):
 		self.assertEqual(t.c, 5)
 
 	def test_set_length(self):
-		t = RightTriangle(0, 0, 0)
-		t.set_length(6, 8, 10)
+		t = RightTriangle(6, 8, 10)
 		self.assertEqual(t.a, 6)
 		self.assertEqual(t.b, 8)
 		self.assertEqual(t.c, 10)
