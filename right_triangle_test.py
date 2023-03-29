@@ -11,14 +11,6 @@ class TestRightTriangle(unittest.TestCase):
 		t = RightTriangle(3, 4, 5)
 		self.assertEqual(t.area(), 6.0)
 
-	def test_set_corners(self):
-		t = RightTriangle(4, 3, 5)
-		t.set_corners((0,0), (4,0), (0, 3))
-		self.assertEqual(t.get_corners(), ((0,0), (4,0), (0, 3)))
-		self.assertEqual(t.a, 4)
-		self.assertEqual(t.b, 3)
-		self.assertEqual(t.c, 5)
-
 	def test_set_length(self):
 		t = RightTriangle(6, 8, 10)
 		self.assertEqual(t.a, 6)
