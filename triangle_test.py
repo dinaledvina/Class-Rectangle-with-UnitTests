@@ -24,6 +24,16 @@ class TriangleTest(unittest.TestCase):
         self.assertEqual(t.b, 8)
         self.assertEqual(t.c, 10)
         expected_corners = ((0,0), (6,0), (0,8))
+    
+    def test_set_length(self):
+		t = RightTriangle(20, 20, 20)
+		#t.set_length(6, 8, 10)
+		self.assertEqual(t.a, 20)
+		self.assertEqual(t.b, 20)
+		self.assertEqual(t.c, 20)
+
+		expected_corners = ((0,0), (20,0), (0,20))
+		self.assertEqual(t.get_corners(), expected_corners)
         	
 
 if __name__ == '__main__':
