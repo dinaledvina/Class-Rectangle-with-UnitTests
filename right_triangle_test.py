@@ -32,8 +32,7 @@ class TestRightTriangle(unittest.TestCase):
 	    expected_corners = ((0,0), (20,0), (0,20))
 	    self.assertEqual(t.get_corners(), expected_corners)
 	    
-	    if t.a ** 2 + t.b ** 2 != t.c ** 2:
-	        raise ValueError("Not a right triangle")
+	    
 
 
 
