@@ -17,7 +17,7 @@ class RightTriangle(Triangle):
     
     def is_right_triangle(self):
     	a, b, c = self.a, self.b, self.c
-    	right = (a ** 2 + b ** 2 ==c ** 2)
+    	right = (a ** 2 + b ** 2 == c ** 2)
     	return right
 
 
