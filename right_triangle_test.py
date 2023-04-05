@@ -22,13 +22,10 @@ class TestRightTriangle(unittest.TestCase):
 	    expected_corners = ((0,0), (6,0), (0,8))
 	    self.assertEqual(t.get_corners(), expected_corners)
 	
+	
 	def test_is_right_triangle(self):
-	    t = RightTriangle(20, 20, 20)
-	    self.assertEqual(t.a, 20)
-	    self.assertEqual(t.b, 20)
-	    self.assertEqual(t.c, 20)
-	    expected_corners = ((0,0), (20,0), (0,20))
-	    self.assertEqual(t.get_corners(), expected_corners)
+	    t1 = RightTriangle(3, 7, 5)
+	    self.assertTrue(t1.is_right_triangle())
 
 
 	    
