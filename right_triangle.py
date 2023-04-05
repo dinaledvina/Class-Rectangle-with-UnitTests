@@ -18,11 +18,7 @@ class RightTriangle(Triangle):
     def is_right_triangle(self):
     	a, b, c = self.a, self.b, self.c
     	right = (a ** 2 + b ** 2 ==c ** 2)
-    	if right == True:
-    		print("Right triangle")
-    	else:
-    		print("Not a right triangle")
-    	return right
+
 
 
 
