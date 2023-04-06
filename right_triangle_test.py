@@ -24,8 +24,8 @@ class TestRightTriangle(unittest.TestCase):
 	
 	
 	def test_is_right_triangle(self):
-	    t1 = RightTriangle(3, 7, 5)
-	    self.assertTrue(t1.is_right_triangle())
+	    t = RightTriangle(7, 7, 7)
+	    self.assertEqual(t.is_right_triangle(), "Error: This is not a right triangle.")
 
 
 	    
