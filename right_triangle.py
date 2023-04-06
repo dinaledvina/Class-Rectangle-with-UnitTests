@@ -15,10 +15,7 @@ class RightTriangle(Triangle):
     def get_corners(self):
         return self.corners
     
-    def is_right_triangle(self):
-        if self.a ** 2 + self.b ** 2 != self.c ** 2:
-            return "Error: This is not a right triangle."
-    
+
 
     
 
