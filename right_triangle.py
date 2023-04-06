@@ -15,9 +15,7 @@ class RightTriangle(Triangle):
     def get_corners(self):
         return self.corners
     
-    def is_right_triangle(self):
-        a, b, c = self.a, self.b, self.c
-        right = (a ** 2 + b ** 2 ==c ** 2)
+
     
 
 
