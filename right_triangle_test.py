@@ -33,6 +33,7 @@ class TestRightTriangle(unittest.TestCase):
 	    self.assertAlmostEqual(t.is_right_triangle_with_two_sides(3, 4), 5.0)
 	    with self.assertRaises(ValueError):
 		t.is_right_triangle_with_two_sides(1, 2)
+		self.assertAlmostEqual(t.is_right_triangle_with_two_sides(1, 2), 2.2360679775)
 
 
 	    
