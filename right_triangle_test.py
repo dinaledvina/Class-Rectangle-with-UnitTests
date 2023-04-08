@@ -29,11 +29,13 @@ class TestRightTriangle(unittest.TestCase):
 		
 	
 	def test_is_right_triangle_with_two_sides(self):
-	    t = RightTriangle(0, 0, 0)
-	    self.assertAlmostEqual(t.is_right_triangle_with_two_sides(3, 4), 5.0)
+	    # Create a right triangle with sides 3 and 4
+	    t = RightTriangle(3, 4)
+	    self.assertTrue(t.is_right_triangle_with_two_sides()) # Verify that the triangle is a right triangle
+	    # Create a non-right triangle with sides 3 and 3
 	    with self.assertRaises(ValueError):
-		t.is_right_triangle_with_two_sides(1, 2)
-		self.assertAlmostEqual(t.is_right_triangle_with_two_sides(1, 2), 2.2360679775)
+	        t = RightTriangle(3, 3)
+		t.is_right_triangle_with_two_sides() # This should raise a ValueError
 
 
 	    
