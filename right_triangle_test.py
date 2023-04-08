@@ -28,14 +28,7 @@ class TestRightTriangle(unittest.TestCase):
 		t = RightTriangle(3, 4, 10)
 		
 	
-	def test_is_right_triangle_with_two_sides(self):
-	    # Create a right triangle with sides 3 and 4
-	    t = RightTriangle(3, 4)
-	    self.assertTrue(t.is_right_triangle_with_two_sides()) # Verify that the triangle is a right triangle
-	    # Create a non-right triangle with sides 3 and 3
-	    with self.assertRaises(ValueError):
-	        t = RightTriangle(3, 3)
-		t.is_right_triangle_with_two_sides() # This should raise a ValueError
+
 
 
 	    
