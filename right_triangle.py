@@ -3,7 +3,8 @@ from triangle import Triangle
 
 
 class RightTriangle(Triangle):
-    def __init__(self, a, b, c):
+    def __init__(self, a, b):
+        c = (a ** 2 + b ** 2) ** 0.5
         if a ** 2 + b ** 2 != c ** 2:
             raise ValueError("Not a right triangle")
         super().__init__(a, b, c)
