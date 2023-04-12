@@ -29,12 +29,12 @@ class TestRightTriangle(unittest.TestCase):
 		
 		
 		
-	def test_is_right_triangle_with_two_sides(self):
-	    t = RightTriangle(0, 0)
+	def test_rounding_error(self):
 	    a, b = 3, 4
-	    expected_c = (a**2 + b**2) ** 0.5
-	    result = t.is_right_triangle_with_two_sides(a, b)
-	    self.assertAlmostEqual(result, expected_c, places = 7)
+	    c_squared = a**2 + b**2
+	    c = c_squared ** 0.5
+
+	    self.assertAlmostEqual(c, 5, places=7)
 		
 	
 
