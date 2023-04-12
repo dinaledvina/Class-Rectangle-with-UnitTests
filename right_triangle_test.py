@@ -34,7 +34,7 @@ class TestRightTriangle(unittest.TestCase):
 	    c_squared = a**2 + b**2
 	    c = c_squared ** 0.5
 
-	    self.assertAlmostEqual(c, 5, places=7)
+	    self.assertAlmostEqual(c, 5, places = 7)
 		
 	
 
