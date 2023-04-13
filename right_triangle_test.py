@@ -29,11 +29,18 @@ class TestRightTriangle(unittest.TestCase):
 		
 		
 		
-	def test_check_right_triangle(self):
-	    t = RightTriangle(3, 4)
-	    self.assertAlmostEqual(t.check_right_triangle(3, 4), 5)
+	def test_right_triangle_constructor(self):
+	    a, b = 3, 4
+	    c = (a ** 2 + b ** 2) ** 0.5
+	    t = RightTriangle(a, b)
+	    self.assertEqual(t.a, a)
+	    self.assertEqual(t.b, b)
+	    self.assertAlmostEqual(t.c, c)
+		
+	    a = 2
+	    b = 2
 	    with self.assertRaises(ValueError):
-	        t.check_right_triangle(2, 2)
+		t = RightTriangle(a, b)
 		
 	
 
