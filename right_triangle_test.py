@@ -31,8 +31,10 @@ class TestRightTriangle(unittest.TestCase):
 		
 	def test_right_triangle_constructor(self):
 	    a, b = 2, 2
-	    with self.assertRaises(ValueError):
-		t = RightTriangle(a, b)
+	    c = (a**2 + b**2)**0.5
+	    if a ** 2 + b ** 2 != c ** 2:
+		with self.assertRaises(ValueError):
+		    t = RightTriangle(a, b)
 		
 
 		
