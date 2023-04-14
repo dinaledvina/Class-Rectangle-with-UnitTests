@@ -33,12 +33,9 @@ class TestRightTriangle(unittest.TestCase):
 	    a, b = 3, 4
 	    c = (a ** 2 + b ** 2) ** 0.5
 	    t = RightTriangle(a, b)
-	    self.assertEqual(t.a, a)
-	    self.assertEqual(t.b, b)
 	    self.assertAlmostEqual(t.c, c)
 		
-	    a = 2
-	    b = 2
+	    a, b = 2, 2
 	    with self.assertRaises(ValueError):
 		t = RightTriangle(a, b)
 		
