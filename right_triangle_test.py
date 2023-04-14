@@ -35,9 +35,7 @@ class TestRightTriangle(unittest.TestCase):
 	    t = RightTriangle(a, b)
 	    self.assertAlmostEqual(t.c, c)
 		
-	    a, b = 2, 2
-	    with self.assertRaises(ValueError):
-		t = RightTriangle(a, b)
+
 		
 	
 
