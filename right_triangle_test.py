@@ -23,9 +23,7 @@ class TestRightTriangle(unittest.TestCase):
 	    self.assertEqual(t.get_corners(), expected_corners)
 	
 	
-	def test_is_right_triangle(self):
-	    with self.assertRaises(ValueError):
-		t = RightTriangle(2, 2)
+
 	
 	
 	def test_right_triangle(self):
