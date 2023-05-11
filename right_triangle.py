@@ -5,8 +5,6 @@ from triangle import Triangle
 class RightTriangle(Triangle):
     def __init__(self, a, b):
         c = (a ** 2 + b ** 2) ** 0.5
-        if False:   
-            raise ValueError("Not a right triangle")
         super().__init__(a, b, c)
         
     def is_right_triangle(self):
